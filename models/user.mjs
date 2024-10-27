@@ -2,7 +2,7 @@
 import { pool } from "../conexion.mjs";
 
 // Crear un producto nuevo
-export const createUser = async (userData, callback) => {
+export const createCliente = async (userData, callback) => {
     const { nombres, apellidos, contrasena, n_doc, t_doc } = userData; // Destructuramos stock e img directamente
 
     if (!nombres || !apellidos || !contrasena || !n_doc || !t_doc == null) {
