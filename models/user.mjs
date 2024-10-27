@@ -1,11 +1,12 @@
 
 import { pool } from "../conexion.mjs";
 
+
 // Crear un producto nuevo
 export const createCliente = async (userData, callback) => {
     const { nombres, apellidos, contrasena, n_doc, t_doc } = userData; // Destructuramos stock e img directamente
 
-    if (!nombres || !apellidos || !contrasena || !n_doc || !t_doc == null) {
+    if (!nombres || !apellidos || !contrasena || !n_doc || t_doc == null) {
         return callback({ message: 'Faltan datos requeridos' }, null);
     }
 
